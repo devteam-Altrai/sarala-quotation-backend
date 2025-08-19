@@ -1,2 +1,8 @@
 fastapi
 uvicorn
+pathlib
+shutil
+openpyxl
+json
+zipfile
+
