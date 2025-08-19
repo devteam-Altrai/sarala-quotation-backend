@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+
+# FastAPI user uploads (sensitive or large data)
+uploads/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+pytest_cache/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# MyPy
+.mypy_cache/
+
+# Pydantic compiled schemas (optional)
+pydantic_schema_cache/
+
+# Local databases (if you're using SQLite for testing/dev)
+*.sqlite3
+
+# Build files
+build/
+dist/
+*.egg-info/
