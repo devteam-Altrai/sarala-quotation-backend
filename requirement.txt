@@ -1,8 +1,5 @@
 fastapi
 uvicorn
-pathlib
-shutil
+python-multipart
 openpyxl
-json
-zipfile
-
+pydantic
