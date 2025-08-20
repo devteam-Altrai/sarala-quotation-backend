@@ -18,9 +18,19 @@ app = FastAPI()
 UPLOAD_DIR = Path("uploads")
 UPLOAD_DIR.mkdir(exist_ok=True)
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["http://localhost:5173","https://sarala-quotation-dashboard.vercel.app"],  # React dev server
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
+
+origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","https://sarala-quotation-dashboard.vercel.app"],  # React dev server
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
