@@ -71,7 +71,7 @@ async def upload_folder(zip_file: UploadFile = File(...)):
         ws = wb.active  # First sheet
 
         part_no_col = 1  # Column B (index 1)
-        qty_col = 4      # Column E (index 4)
+        qty_col = 3      # Column E (index 4)
 
         parts_dict = {}
         for row in ws.iter_rows(min_row=2):  # Skip header
